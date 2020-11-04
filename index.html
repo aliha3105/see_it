@@ -78,10 +78,12 @@
             font-size: 20px;
             width: 100%;
             padding: 5px;
+            padding-bottom: 1px;
+            padding-top: 1px;
         }
         h2{
             width: 100%;
-            font-size: 30px;
+            font-size: 40px;
             text-align: center;
         }
         .div_middle{
@@ -89,20 +91,29 @@
             display: flex;
             align-content: center;
             flex-wrap: wrap;
+            flex-direction: row;
         }
         .div_studies{
             margin: auto;
-            width: 45%;
             padding: 20px;
             display: flex;
             align-content: center;
         }
+        .div_studies:hover{
+            background-color: #ddd;
+        }
         .p_studies{
             font-size: 20px;
             width: 100%;
+            color: black;
+            font-weight: bold;
+            text-align: center;
         }
         .img_studies{
             padding: 5px;
+        }
+        .footer{
+            background-color: rgb(34, 31, 32);
         }
     </style>
 </head>
@@ -122,46 +133,51 @@
             <img class="banner_img" src="https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-tech-particle-purple-banner-background-image_208732.jpg" alt="Banner Image">
             <div class="div_banner_text">University of Advanced Technology</div>
         </div>
-            <p class="p_info">We at <strong>UAT</strong> have a passion for technology...</p>
-            <h2>Studies</h2>
-            <div class="div_middle">
-                <div class="div_studies">
-                    <a href="">
-                    <p class="p_studies">Business & Innovation</p>
-                    <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
-                    </a>
+        <p class="p_info">We at <strong>UAT</strong> have a passion for technology, and think that it is important for students to learn about it.</p>
+        <p class="p_info">Underneath, you can explore several different studies that may fit you.</p>
+        <h2>Studies</h2>
+        <div class="div_middle">
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Business & Innovation</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
                 </div>
-                <div class="div_studies">
-                    <a href="">
-                    <p class="p_studies">Creation & Simulation</p>
-                    <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
-                    </a>
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Creation & Simulation</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
                 </div>
-                <div class="div_studies">
-                    <a href="">
-                    <p class="p_studies">Cyber & Security</p>
-                    <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
-                    </a>
-                </div>
-                <div class="div_studies">
-                    <a href="">
-                    <p class="p_studies">Digital Arts</p>
-                    <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
-                    </a>
-                </div>
-                <div class="div_studies">
-                    <a href="">
-                    <p class="p_studies">Game Studies</p>
-                    <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
-                    </a>
-                </div>
-                <div class="div_studies">
-                    <a href="">
-                    <p class="p_studies">Software Engineering</p>
-                    <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
-                    </a>
-                </div>
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Cyber & Security</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
             </div>
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Digital Arts</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
+            </div>
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Game Studies</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
+            </div>
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Software Engineering</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="ul_footer">
+                <li class="li_footer"><a class="a_footer" href="#">Request info</a></li>
+            </ul>
         </div>
     </div>
 </body>
