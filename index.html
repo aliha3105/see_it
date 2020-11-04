@@ -36,7 +36,6 @@
             float: left;
             margin: 1px;
             }
-
         .li a {
             display: block;
             padding: 10px;
@@ -46,6 +45,10 @@
             background: #ddd;
             color: black;
         }
+        .li_menu_login {
+            float: right;
+            margin: 1px;
+            }
         .hovedside{
             margin: auto;
             width: 100%;
@@ -54,23 +57,35 @@
         }
         .div_banner{
             width: 100%;
-            padding: 5px;
             margin: auto;
         }
-        img_banner{
-            background-size: cover;
+        .banner_img{
+            background-repeat: repeat-x;
+            background-attachment: fixed;
         }
+        .div_middle{
+            display: flex;
+        }
+        
     </style>
 </head>
 <body>
     <div class="hovedside">
         <ul class="ul_menu">
-            <li><a class="a_menu_img" href="#"><img src="https://jaronsenthilkumar.github.io/SeeIt2/uat-logo.png" height="50%" width="50%"></a></li>
-            <li class="li_menu"><a class="a_menu" href="#">Studies</a></li>
-            <li class="li_menu"><a class="a_menu" href="#">Healthy recipes</a></li>
+            <li><a class="a_menu_img" href="index.html"><img src="https://jaronsenthilkumar.github.io/SeeIt2/uat-logo.png" height="50%" width="50%"></a></li>
+            <li class="li_menu"><a class="a_menu" href="#">News and Events</a></li>
+            <li class="li_menu"><a class="a_menu" href="#">Degrees</a></li>
+            <li class="li_menu"><a class="a_menu" href="#">Admissions</a></li>
+            <li class="li_menu"><a class="a_menu" href="#">Academics</a></li>
+            <li class="li_menu"><a class="a_menu" href="#">Student Experience</a></li>
+            <li class="li_menu"><a class="a_menu" href="#">About Us</a></li>
+            <li class="li_menu_login"><a class="a_menu" href="#">Login</a></li>
         </ul>
         <div class="div_banner">
-            <img class="img_banner" src="#">
+            <img class="banner_img" src="https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-tech-particle-purple-banner-background-image_208732.jpg">
+        </div>
+        <div class="div_middle">
+
         </div>
     </div>
     
