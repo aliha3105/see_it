@@ -13,9 +13,16 @@
             display: block;
             color: black;
             text-align: center;
-            padding: 14px 16px;
+            padding: 14px;
             text-decoration: none;
-            font-size: 17px;
+            font-size: 30px;
+        }
+        .a_menu_img{
+            float: left;
+            display: block;
+            text-align: center;
+            background-size: cover;
+            margin: 1px;
         }
         .ul_menu {
             list-style-type: none;
@@ -27,6 +34,7 @@
 
         .li_menu {
             float: left;
+            margin: 1px;
             }
 
         .li a {
@@ -38,14 +46,32 @@
             background: #ddd;
             color: black;
         }
+        .hovedside{
+            margin: auto;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .div_banner{
+            width: 100%;
+            padding: 5px;
+            margin: auto;
+        }
+        img_banner{
+            background-size: cover;
+        }
     </style>
 </head>
 <body>
     <div class="hovedside">
         <ul class="ul_menu">
-            <li class="li_menu"><a class="a_menu" href="index.html">Cake desserts</a></li>
-            <li class="li_menu"><a class="a_menu" href="healthy.html">Healthy recipes</a></li>
-         </ul>
+            <li><a class="a_menu_img" href="#"><img src="https://jaronsenthilkumar.github.io/SeeIt2/uat-logo.png" height="50%" width="50%"></a></li>
+            <li class="li_menu"><a class="a_menu" href="#">Studies</a></li>
+            <li class="li_menu"><a class="a_menu" href="#">Healthy recipes</a></li>
+        </ul>
+        <div class="div_banner">
+            <img class="img_banner" src="#">
+        </div>
     </div>
     
     
