@@ -93,10 +93,17 @@
         }
         .div_middle{
             width: 100%;
+            margin: auto;
             display: flex;
             align-content: center;
             flex-wrap: wrap;
             flex-direction: row;
+        }
+        .outside_studies{
+            margin: auto;
+            width: 40%;
+            display: flex;
+            align-content: center;
         }
         .div_studies{
             margin: auto;
@@ -116,6 +123,7 @@
         }
         .img_studies{
             padding: 5px;
+            margin: auto;
         }
         .footer{
             width: 100%;
@@ -153,6 +161,122 @@
             height: 130px;
             margin: auto;
         }
+        @media only screen and (max-width: 1350px){
+            .a_menu {
+            padding: 8px;
+            font-size: 25px;
+            }
+            .img_menu{
+            width: 50px;
+            height: 50px;
+            }
+            .div_banner_text{
+            font-size: 40px;
+            }
+        }
+        @media only screen and (max-width: 1070px){
+            .a_menu {
+            padding: 8px;
+            font-size: 20px;
+            }
+            .img_menu{
+            width: 40px;
+            height: 40px;
+            }
+            h2{
+            font-size: 30px;
+            }
+            .p_info{
+            font-size: 15px;
+            }
+        }
+        @media only screen and (max-width: 900px){
+            .a_menu {
+            padding: 8px;
+            font-size: 15px;
+            }
+            .img_menu{
+            width: 35px;
+            height: 35px;
+            }
+            .banner_img{
+            height: 200px;
+            }
+            .div_banner_text{
+            font-size: 30px;
+            }
+        }
+        @media only screen and (max-width: 700px){
+            .a_menu {
+            padding: 4px;
+            font-size: 10px;
+            }
+            .img_menu{
+            width: 25px;
+            height: 25px;
+            }
+            .banner_img{
+            height: 150px;
+            }
+            .div_banner_text{
+            font-size: 25px;
+            }
+        }
+        @media only screen and (max-width: 550px){
+            .banner_img{
+            height: 130px;
+            }
+            h2{
+            font-size: 25px;
+            }
+            .div_banner_text{
+            font-size: 20px;
+            }
+            .p_studies{
+            font-size: 15px;
+            }
+            .div_studies{
+            padding: 15px;
+            }
+            .img_studies{
+            width: 100px;
+            height: 100px;
+            }
+        }
+        @media only screen and (max-width: 450px){
+            .a_menu {
+            padding: 2px;
+            font-size: 8px;
+            }
+            .img_menu{
+            width: 15px;
+            height: 15px;
+            }
+            .banner_img{
+            height: 100px;
+            }
+            .div_banner_text{
+            font-size: 15px;
+            }
+            h2{
+            font-size: 20px;
+            }
+            .p_studies{
+            font-size: 13px;
+            }
+            .div_studies{
+            padding: 15px;
+            }
+            .img_studies{
+            width: 100px;
+            height: 100px;
+            }
+        }
+        @media only screen and (max-width: 375px){
+            .outside_studies{
+            width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -171,45 +295,58 @@
             <img class="banner_img" src="https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-tech-particle-purple-banner-background-image_208732.jpg" alt="Banner Image">
             <div class="div_banner_text">University of Advanced Technology</div>
         </div>
-        <p class="p_info">We at <strong>UAT</strong> have a passion for technology, and think that it is important for students to learn about it.</p>
-        <p class="p_info">Underneath, you can explore several different studies that may fit you.</p>
+        <p class="p_info">We at <strong>UAT</strong> have a passion for technology, and think that it is important for students to learn about it. 
+        <br>
+        Underneath, you can explore several different studies that may fit you.</p>
         <h2>Studies</h2>
         <div class="div_middle">
-            <div class="div_studies">
+            <div class="outside_studies">
+                <div class="div_studies">
                 <a href="">
                 <p class="p_studies">Business & Innovation</p>
                 <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="Picture of Business & Innovation">
                 </a>
                 </div>
+                </div>
+            <div class="outside_studies">
             <div class="div_studies">
                 <a href="">
                 <p class="p_studies">Creation & Simulation</p>
                 <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="Picture of Creation & Simulation">
                 </a>
                 </div>
+                </div>
+            <div class="outside_studies">
             <div class="div_studies">
                 <a href="">
                 <p class="p_studies">Cyber & Security</p>
                 <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="Picture of Cyber & Security">
                 </a>
             </div>
+            </div>
+            <div class="outside_studies">
             <div class="div_studies">
                 <a href="">
                 <p class="p_studies">Digital Arts</p>
                 <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="Picture of Digital Arts">
                 </a>
             </div>
+            </div>
+            <div class="outside_studies">
             <div class="div_studies">
                 <a href="">
                 <p class="p_studies">Game Studies</p>
                 <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="Picture of Game Studies">
                 </a>
             </div>
+            </div>
+            <div class="outside_studies">
             <div class="div_studies">
                 <a href="">
                 <p class="p_studies">Software Engineering</p>
                 <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="Picture of Software Engineering">
                 </a>
+            </div>
             </div>
         </div>
         <div class="footer">
