@@ -4,8 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front Page</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        .a_menu {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        .a_menu_img{
+            float: left;
+            display: block;
+            text-align: center;
+            margin: 1px;
+        }
+        .ul_menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 10px;
+            }
+
+        .li_menu {
+            float: left;
+            margin: 1px;
+            }
+        .li a {
+            display: block;
+            padding: 10px;
+            color: black;
+            }
+        .a_menu:hover{
+            background: #ddd;
+            color: black;
+        }
+        .li_menu_login {
+            float: right;
+            margin: 1px;
+            }
+        .hovedside{
+            margin: auto;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .div_banner{
+            width: 100%;
+            margin: auto;
+            position: relative;
+            text-align: center;
+        }
+        .banner_img{
+            width: 100%;
+            height: 300px;
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+        }
+        .div_banner_text{
+            font-size: 60px;
+            position: absolute;
+            color: whitesmoke;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .p_info{
+            font-size: 20px;
+            width: 100%;
+            padding: 5px;
+            padding-bottom: 1px;
+            padding-top: 1px;
+        }
+        h2{
+            width: 100%;
+            font-size: 40px;
+            text-align: center;
+        }
+        .div_middle{
+            width: 100%;
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .div_studies{
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            align-content: center;
+        }
+        .div_studies:hover{
+            background-color: #ddd;
+        }
+        .p_studies{
+            font-size: 20px;
+            width: 100%;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        .img_studies{
+            padding: 5px;
+        }
+        .footer{
+            width: 100%;
+            background-color: rgb(34, 31, 32);
+            margin-top: 20px;
+        }
+        .ul_footer{
+            list-style-type: none;
+            padding: 5px;
+        }
+        .li_footer{
+            color: whitesmoke;
+            padding: 2px;
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+        .a_footer{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        .p_footer{
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+        .img_div_footer{
+            width: 100%;
+            margin: auto;
+            margin-top: 10px;
+            display: flex;
+            align-content: center;
+        }
+        .img_footer{
+            width: 110px;
+            height: 130px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="hovedside">
+        <ul class="ul_menu">
+            <li><a class="a_menu_img" href="index.html"><img src="https://jaronsenthilkumar.github.io/SeeIt2/uat-logo.png" height="50%" width="50%"></a></li>
+            <li class="li_menu"><a class="a_menu" href="#">News and Events</a></li>
+            <li class="li_menu"><a class="a_menu" href="#">Degrees</a></li>
+            <li class="li_menu"><a class="a_menu" href="#">Admissions</a></li>
+            <li class="li_menu"><a class="a_menu" href="#">Academics</a></li>
+            <li class="li_menu"><a class="a_menu" href="#">Student Experience</a></li>
+            <li class="li_menu"><a class="a_menu" href="#">About Us</a></li>
+            <li class="li_menu_login"><a class="a_menu" href="#">Login</a></li>
+        </ul>
+        <div class="div_banner">
+            <img class="banner_img" src="https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-tech-particle-purple-banner-background-image_208732.jpg" alt="Banner Image">
+            <div class="div_banner_text">University of Advanced Technology</div>
+        </div>
+        <p class="p_info">We at <strong>UAT</strong> have a passion for technology, and think that it is important for students to learn about it.</p>
+        <p class="p_info">Underneath, you can explore several different studies that may fit you.</p>
+        <h2>Studies</h2>
+        <div class="div_middle">
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Business & Innovation</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
+                </div>
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Creation & Simulation</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
+                </div>
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Cyber & Security</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
+            </div>
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Digital Arts</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
+            </div>
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Game Studies</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
+            </div>
+            <div class="div_studies">
+                <a href="">
+                <p class="p_studies">Software Engineering</p>
+                <img class="img_studies" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="img_div_footer">
+                <img class="img_footer" src="https://www.uat.edu/themes/uat/images/uat-logo.png" alt="Logo of UAT">
+            </div>
+            <p class="p_footer">2625 W. BASELINE RD.
+                <br>
+                TEMPE, AZ 85283-1056
+            </p>
+            <p class="p_footer">(800) 658-5744</p>
+            <br>
+            <p class="p_footer">2020 University of Advanced Technology</p>
+            <p class="p_footer">All rights reserved</p>
+            <p class="p_footer">Online Brand by FabCom</p>
+        </div>
+    </div>
 </body>
 </html>
