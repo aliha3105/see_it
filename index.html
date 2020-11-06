@@ -82,8 +82,10 @@
         .div_p{
             width: 90%;
             margin: auto;
-            border: 4px solid rgb(34, 31, 32);
+            border: 10px solid rgb(255, 255, 255);
             text-align: center;
+            border-radius:15px;
+            
         }
         .p_info{
             font-size: 25px;
@@ -92,6 +94,7 @@
             padding-bottom: 1px;
             padding-top: 1px;
             margin: auto;
+          
         }
         h2{
             width: 100%;
@@ -168,6 +171,53 @@
             height: 130px;
             margin: auto;
         }
+        .box{
+            position: relative;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:#ffffff ;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+
+        }
+        .box:before
+        {
+            content:"";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #581f99;
+            z-index: -1;
+           
+        }
+        .box:after
+        {
+            content:"";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #581f99;
+            z-index: -2;
+            filter: blur(50px);
+        }
+        .box:before, .box:after{ 
+            background: linear-gradient(235deg,#581f99,#ffffff,#581f99 );
+        }
+        h1:first-letter{
+          color: rgb(0, 0, 0);
+          font-size: 80px;
+          float:inline-start;
+          line-height: 1;
+        }
+        
+
         @media only screen and (max-width: 1350px){
             .a_menu {
             padding: 8px;
@@ -195,6 +245,7 @@
             }
             .p_info{
             font-size: 15px;
+    
             }
         }
         @media only screen and (max-width: 900px){
@@ -287,6 +338,8 @@
     </style>
 </head>
 <body>
+
+
     <div class="hovedside">
         <ul class="ul_menu">
             <li><a class="a_menu_img" href="index.html"><img class="img_menu" src="pictures/uat-logo.png" alt="Logo of UAT"></a></li> <!-- Logo from: https://www.uat.edu/themes/uat/images/uat-logo.png -->
@@ -298,30 +351,42 @@
             <li class="li_menu"><a class="a_menu" href="https://www.uat.edu/about-uat" target="_blank">About Us</a></li>
             <li class="li_menu_login"><a class="a_menu" href="#" target="_blank">Login</a></li>
         </ul>
+
         <div class="div_banner">
             <img class="banner_img" src="https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-tech-particle-purple-banner-background-image_208732.jpg" alt="Banner Image">
             <div class="div_banner_text">University of Advanced Technology</div>
         </div>
+
+
         <div class="div_p">
-            <p class="p_info"><strong>University of Advanced Technology</strong> 
-            <br>
+            <div class="box">
+                <div class="content1">
+            
+                  
+               
+            <p class="p_info">
+                <h1>University of Advanced Technology</h1>
+                
+           
+            <p style= "padding-bottom: 15px;letter-spacing: 1px;font-size: 20px;";>
             is the home of enquiring minds, inspiring teachers, 
-            pioneering researchers and committed professional services staff, all of whom are determined to make the world a better place. 
-            <br>
+            pioneering researchers and committed professional services staff, all of whom are determined to make the world a better place.
+            
             We're highly ranked in independent league tables for overall performance, student satisfaction and graduate employment. 
             The University of Advanced Technology meets societal challenges with a wide range of knowledge. 
-            <br>
+           
             Strong research and appealing study programmes attract scientists and students from around the world. 
-            <br>
+           
             We are environmentally certified and work actively for sustainable development. 
             With new knowledge and new perspectives, our students and researchers contribute to a better future.
-            <br>
-<<<<<<< Updated upstream
-            Underneath, you can explore several different studies that may fit you.
-=======
-           <cursive> Underneath, you can explore several different studies that may fit you.</cuve>
->>>>>>> Stashed changes
+            
+        </p>
+
+           <p style="font-size: 20px; text-decoration:underline rgb(117, 0, 117);font-style: italic;">Underneath, you can explore several different studies that may fit you.</p>
+
             </p>
+        </div>
+            </div>
         </div>
         <h2>Studies</h2>
         <div class="div_middle">
